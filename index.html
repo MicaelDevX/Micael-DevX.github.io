@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Gerador de números da sorte</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gerador de números da sorte</h1>
+
+      <p>Clique no botão para gerar os números</p>
+      <div id="gerador">
+        <div id="prize-draw">
+          <label for="">
+            Número máximo para a casa das dezenas
+            <input type="number" name="" id="valor-maximo"
+          /></label>
+          <br />
+          <label for="">
+            Quantidade de números
+            <input id="quantidade-de-numeros" type="number"
+          /></label>
+        </div>
+        <br />
+        <br />
+
+        <button type="button" id="btnAdd" onclick="sortear()" class="btn">
+          Gerar
+        </button>
+
+        <button
+          type="button"
+          id="btnAdd"
+          value="limpar"
+          onclick="window.location.reload()"
+        >
+          Limpar
+        </button>
+      </div>
+
+      <div id="result"><ul id="lista"></ul></div>
+
+      <script src="script.js"></script>
+    </header>
+  </body>
+</html>
